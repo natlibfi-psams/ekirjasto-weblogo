@@ -1,2 +1,2 @@
-FROM lighttpd:alpine
-COPY ./static /var/www/html
+FROM nginx:alpine
+COPY ./static /usr/share/nginx/html
