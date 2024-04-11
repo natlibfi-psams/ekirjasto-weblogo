@@ -12,5 +12,5 @@ buildah build -t ekirjasto-weblogo .
 
 Run:
 ```
-podman run -d -p 8080:80 ekirjasto-weblogo
+podman run -d --rm -p 6500:80 ekirjasto-weblogo
 ```
