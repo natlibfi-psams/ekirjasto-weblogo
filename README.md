@@ -10,7 +10,9 @@ cd ekirjasto-weblogo
 buildah build -t ekirjasto-weblogo .
 ```
 
-Run:
+Run or pull image:
 ```
-podman run -d --rm --name weblogo -p 6500:80 ekirjasto-weblogo
+# or use docker
+#podman pull ghcr.io/natlibfi-psams/ekirjasto-weblogo:main
+podman run -d --rm --name weblogo -p 8000:80 ghcr.io/natlibfi-psams/ekirjasto-weblogo:main
 ```
